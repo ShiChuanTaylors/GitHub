@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-58235f0ef7b463a8b18da53af49d910ab829e2c6.jar"
+        jar="/Users/ting/Desktop/Traquer/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/libGoogleAnalyticsServices-51a856da24423bb9a96e454b50d275f66a6705d1.jar"
+        jar="/Users/ting/Desktop/Traquer/app/libs/libGoogleAnalyticsServices.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="db1e65d9e3ee616f871cb23120fbea8f18ad3e4c"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/classes-fc045ff78135f93702e017a293f64e8e6c548527.jar"
+        jar="/Users/ting/Desktop/Traquer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.2-deb195cbc94991e8458c06c604be7beb2f6463a3.jar"
+        jar="/Users/ting/Desktop/Traquer/app/libs/twitter4j-4/lib/twitter4j-core-4.0.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="381cf31e9200c2902782f17248d2af18e2ab4c56"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/release/classes-ee8b9fb71a3c85bb12b0bff933b7e666f8d563c8.jar"
+        jar="/Users/ting/Desktop/Traquer/app/build/intermediates/exploded-aar/Traquer/facebook/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1a086457be4a52e2de438128145ad4ca26fe55f4"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/classes-19300752aa2bc9d17deaecae5e9b2c9c45e6c193.jar"
+        jar="/Users/ting/Desktop/Traquer/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-bca9cd8c8082330ef7549e0398af852faae531fd.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/Pushbots131beta-49e3ecc7cabb7af5893e7aff842f2412de216121.jar"
+        jar="/Users/ting/Desktop/Traquer/app/libs/Pushbots131beta.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ecf8f02209676afa779c6084ca950d99431e5b3c"/>
+    <item
+        dex="/Users/ting/Desktop/Traquer/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-5f367c484adf6a8256d09e077064eccb369b3229.jar"
+        jar="/Users/ting/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7"/>
+
+</pre-dex-items>

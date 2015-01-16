@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/cmmt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anonymous"
+        android:textColor="@color/Black"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:textSize="13sp"/>
+    <TextView
+        android:id="@+id/tcmmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cmmt_user"
+        android:text="Nice"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:textColor="@color/Black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/no_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cmmt_user"
+        android:text=""
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:textColor="@color/Black"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/cmmtDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tcmmt"
+        android:text="22 minutes ago"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:textColor="@color/Black"
+        android:textSize="12sp"/>
+</RelativeLayout>

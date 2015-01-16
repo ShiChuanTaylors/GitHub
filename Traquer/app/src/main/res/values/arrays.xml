@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="busCompany" translatable="false">
+        <item>Transnasional</item><item>Star Shuttle</item><item>Platinum Star Coach</item>
+        <item>Bulan Restu</item><item>Superior Coach</item><item>SS International Express</item>
+        <item>Rapid KL</item><item>THE-ONE</item><item>Luxury Coach</item><item>Odyssey Prestige Coaches</item>
+        <item>Konsortium Bus Express</item><item>Sipitang Express</item><item>Maju Express</item><item>NKS</item>
+        <item>Plusliner</item><item>Shira Transliner</item><item>Qistna Express</item><item>Lionstar Express</item>
+        <item>Unititi Express</item><item>Seasons Express</item><item>Kurnia Bistari Express</item>
+        <item>WTS Travel</item><item>Kuala Yakin Express</item><item>KPB</item><item>KMK-STARCOACH</item>
+        <item>Yakin BG Express</item><item>Hidayah Sutera Travel</item><item>Hatyai InterTop</item>
+        <item>HOYE HOLIDAYS</item><item>KESATUAN</item><item>KGR</item><item>KKKL</item><item>Nice Coach Bus</item>
+        <item>Transtar Travel</item><item>GT Express</item><item>Golden Coach</item><item>Grassland Express</item>
+        <item>Star Express</item><item>Five Stars Penang</item><item>Delima Express</item>
+        <item>ETIKA Express</item><item>First Coach</item><item>FIVESTARS MY</item><item>City Holidays</item>
+        <item>CitiExchange</item><item>CAUSEWAY LINK</item><item>BINTANG JAYA</item><item>Billion Stars</item>
+        <item>707-Travel Group</item><item>99 Coachland Express</item><item>Aerobus</item><item>Alisan Golden Coach</item>
+        <item>Biaramas Express</item><item>Asia Star Express</item><item>Eltabina Jaya Express</item><item>YoYo Express</item>
+    </string-array>
+
+    <string-array name="location" translatable="false">
+        <item>Pahang</item>
+        <item>Kuala Lumpur</item>
+        <item>Melaka</item>
+        <item>Johor</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Kelantan</item>
+        <item>Terengganu</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Kedah</item>
+        <item>Negeri Sembilan</item>
+        <item>Selangor</item>
+    </string-array>
+
+    <string-array name="bus_type">
+        <item>Express Bus</item>
+        <item>Stage Bus</item>
+        <item>Shuttle Bus</item>
+    </string-array>
+</resources>

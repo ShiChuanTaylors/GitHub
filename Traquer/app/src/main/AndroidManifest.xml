@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.speed.traquer.app" >
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.speed.traquer.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.speed.traquer.app.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- This app has permission to use GPS locator -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+,
+        and 
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.speed.traquer.app.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Speedometer"
+            android:label="@string/title_activity_speedometer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TraqCode"
+            android:label="@string/title_activity_traq_code" >
+        </activity>
+        <activity android:name="com.pushbots.push.PBMsg" />
+        <activity android:name="com.pushbots.push.PBListener" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.speed.traquer.app" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.MsgReceiver" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />
+        <service android:name="org.openudid.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".TraqComplaint"
+            android:label="@string/title_activity_traq_complaint"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="traquer"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TraqComment"
+            android:label="@string/title_activity_traq_comment"
+            android:theme="@style/AppBar" >
+        </activity>
+        <activity
+            android:name=".TraqRecord"
+            android:label="@string/title_activity_traq_record" >
+        </activity>
+        <activity
+            android:name=".FragmentRecord"
+            android:label="@string/title_activity_fragment_record"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".Feedback_rate"
+            android:label="@string/title_activity_feedback_rate"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".BusDetail"
+            android:label="@string/title_activity_bus_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.FragmentRecord" />
+        </activity>
+        <activity
+            android:name=".ListCmmt"
+            android:label="@string/title_activity_list_cmmt"
+            android:theme="@style/AppBar" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".Feedback_rate_taxi"
+            android:label="@string/title_activity_feedback_rate_taxi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".TraqComplaintTaxi"
+            android:label="@string/title_activity_traq_complaint_taxi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".AppFeedback"
+            android:label="@string/action_app_feedback"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Speedometer" />
+        </activity>
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Settings" />
+        </activity>
+        <activity
+            android:name=".ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:theme="@style/AppBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.speed.traquer.app.Account" />
+        </activity>
+    </application>
+
+</manifest>

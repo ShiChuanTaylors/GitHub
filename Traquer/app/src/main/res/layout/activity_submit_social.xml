@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:id="@+id/twitterImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"/>
+
+        <TextView
+            android:id="@+id/textTwitterDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGray"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
+            android:layout_toRightOf="@+id/imageDialog"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/facebookImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/twitterImageButton">
+
+        <ImageView
+            android:id="@+id/imageDialogFb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:id="@+id/textFacebookDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGray"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
+            android:layout_toRightOf="@+id/imageDialogFb"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/smsImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebookImageButton">
+
+        <ImageView
+            android:id="@+id/imageDialogSMS"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:id="@+id/textSMSDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGray"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
+            android:layout_toRightOf="@+id/imageDialogSMS"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/defaultImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smsImageButton">
+
+        <ImageView
+            android:id="@+id/imageDialogDefault"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:id="@+id/textDefaultDialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkGray"
+            android:textSize="20sp"
+            android:layout_margin="12dp"
+            android:layout_toRightOf="@+id/imageDialogDefault"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" Submit "
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/defaultImageButton" />
+
+</RelativeLayout>

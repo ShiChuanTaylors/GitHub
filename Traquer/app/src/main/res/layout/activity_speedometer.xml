@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:id="@+id/speedPage"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.speed.traquer.app.Speedometer"
+    android:background="@drawable/bgroad">
+
+    <Button
+        android:id="@+id/ibutton_speed"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_speed_blue"/>
+
+    <!--<ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/img_alert"
+        android:layout_toLeftOf="@+id/txtAlert"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_above="@id/ibutton_speed"/>!-->
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:text="@string/btn_speedo_complaint"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/ibutton_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="25dp"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtCenter"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="0sp"/>
+
+    <TextView
+        android:id="@+id/unit"
+        android:text="@string/unit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/text_speed"
+        android:text="@string/initial_speed"
+        android:layout_above="@id/txtCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:textSize="80sp"/>
+
+    <Button
+        android:id="@+id/ibFeedback"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/txtRate"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_rate"/>
+
+
+    <Button
+        android:id="@+id/ibBillBoard"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/txtBillBoard"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_rank"/>
+
+    <TextView
+        android:id="@id/txtBillBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_fragment_record"
+        android:textSize="15sp"
+        android:textColor="@color/White"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@id/txtRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate"
+        android:textSize="15sp"
+        android:textColor="@color/White"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/complain"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
+
+    <!--<ImageButton
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_rate"
+        android:layout_above="@id/complain"
+        android:background="@drawable/border_blue"/> !-->
+</RelativeLayout>

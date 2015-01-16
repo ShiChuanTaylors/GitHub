@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:id="@+id/txt_acc"
+android:layout_height="match_parent"
+android:textSize="15sp"
+android:drawableLeft="@drawable/pwd"
+android:drawablePadding="@dimen/activity_vertical_margin"
+android:padding="@dimen/activity_horizontal_margin">
+</TextView>

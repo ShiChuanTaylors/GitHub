@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Pushbots131beta">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/Pushbots131beta.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.speed.traquer.app.TraqCode">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/logo_vertical_margin"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/insert_code"/>
+
+    <EditText
+        android:id="@+id/insert_code"
+        android:layout_width="wrap_content"
+        android:hint="@string/bus_code"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:imeOptions="flagNoEnterAction"
+        android:maxLength="5"/>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:text="Enter"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/insert_code"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/logo_vertical_margin"
+        android:layout_below="@id/search"/>
+</RelativeLayout>
