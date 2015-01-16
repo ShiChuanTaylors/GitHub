@@ -85,6 +85,7 @@ import com.google.analytics.tracking.android.MapBuilder;
 
 public class TraqComplaint extends ActionBarActivity {
 
+    //Added this to file
     private EasyTracker easyTracker = null;
     private UiLifecycleHelper uiHelper;
 
